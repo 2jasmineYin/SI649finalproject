@@ -43,7 +43,6 @@
     .byline {
       font-style: italic;
       color: #666;
-      margin-bottom: 2em;
       font-size: 1.1em;
     }
     .figure-container {
@@ -101,6 +100,38 @@
       margin: 2em 0;
       font-style: italic;
     }
+    .online-version {
+      margin: 1.5em 0;
+      text-align: center;
+    }
+    .online-version p {
+      margin: 0.3em 0;
+      color: #555;
+      font-size: 0.95em;
+    }
+    .online-version p:first-child {
+      margin-bottom: 0.8em;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+    .online-version a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid #3498db;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .online-version a:hover {
+      color: #2980b9;
+      border-bottom-color: #2980b9;
+    }
+    a {
+      color: #3498db;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #2980b9;
+    }
   </style>
 </head>
 <body>
@@ -112,6 +143,10 @@
 <div class="byline">
 <em>An analysis of the housing affordability crisis and the policy tools designed to address it</em><br/>
 <em>By Jing Yin and Merrila Liu | December 2024</em>
+</div>
+
+<div class="online-version">
+<p><strong>Online Versions:</strong> <a href="https://housing-policy-gap.streamlit.app" target="_blank">Interactive Streamlit App →</a> | <a href="https://2jasmineyin.github.io/SI649finalproject/article_integrated.html" target="_blank">GitHub Pages Article →</a></p>
 </div>
 
 <div class="intro">
