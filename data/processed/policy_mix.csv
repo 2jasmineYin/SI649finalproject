@@ -1,0 +1,9 @@
+city,city_type,public_housing_pct,voucher_pct,lihtc_pct,section8_pct,iz_pct
+"New York, NY",Strong Market,15,25,45,10,5
+"Los Angeles, CA",Mixed,25,30,30,10,5
+"Chicago, IL",Mixed,25,30,30,10,5
+"Detroit, MI",Legacy City,40,35,15,8,2
+"Cleveland, OH",Legacy City,40,35,15,8,2
+"Philadelphia, PA",Mixed,25,30,30,10,5
+"San Francisco, CA",Strong Market,15,25,45,10,5
+"Boston, MA",Strong Market,15,25,45,10,5

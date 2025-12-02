@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "fill": "#ffffff", "strokeWidth": 0}}, "layer": [{"data": {"name": "data-cfaf9ed5e8094a2ebccb58ef5da19fda"}, "mark": {"type": "circle"}, "encoding": {"color": {"field": "income_group", "title": "City Type", "type": "nominal"}, "opacity": {"condition": {"param": "param_1", "value": 1.0, "empty": true}, "value": 0.35}, "size": {"field": "total_severe", "scale": {"range": [300, 2000]}, "title": "Severely Burdened Renters", "type": "quantitative"}, "tooltip": [{"field": "income_group", "title": "City Type", "type": "nominal"}, {"field": "total_severe", "format": ",d", "title": "Severely Burdened Renters", "type": "quantitative"}, {"field": "severely_burdened_pct", "format": ".1f", "title": "Share of All Severely Burdened (%)", "type": "quantitative"}, {"field": "subsidized_per_100_burdened", "format": ".1f", "title": "Subsidized per 100 Burdened", "type": "quantitative"}], "x": {"field": "severely_burdened_pct", "title": "Share of All Severely Burdened Renters (%)", "type": "quantitative"}, "y": {"field": "subsidized_per_100_burdened", "title": "Subsidized Units per 100 Severely Burdened", "type": "quantitative"}}, "name": "view_1"}, {"data": {"name": "data-cfaf9ed5e8094a2ebccb58ef5da19fda"}, "mark": {"type": "text", "align": "center", "baseline": "middle", "fontSize": 13, "fontWeight": "bold"}, "encoding": {"color": {"field": "income_group", "title": "City Type", "type": "nominal"}, "opacity": {"condition": {"param": "param_1", "value": 1.0, "empty": true}, "value": 0.7}, "text": {"field": "income_group", "type": "nominal"}, "tooltip": [{"field": "income_group", "title": "City Type", "type": "nominal"}, {"field": "total_severe", "format": ",d", "title": "Severely Burdened Renters", "type": "quantitative"}, {"field": "severely_burdened_pct", "format": ".1f", "title": "Share of All Severely Burdened (%)", "type": "quantitative"}, {"field": "subsidized_per_100_burdened", "format": ".1f", "title": "Subsidized per 100 Burdened", "type": "quantitative"}], "x": {"field": "label_x", "title": "Share of All Severely Burdened Renters (%)", "type": "quantitative"}, "y": {"field": "label_y", "title": "Subsidized Units per 100 Severely Burdened", "type": "quantitative"}}, "transform": [{"calculate": "datum.severely_burdened_pct + datum.label_dx", "as": "label_x"}, {"calculate": "datum.subsidized_per_100_burdened + datum.label_dy", "as": "label_y"}]}, {"data": {"name": "data-ccfdef34efef87323cbcfc5758e3a5e2"}, "mark": {"type": "rule", "color": "gray", "strokeDash": [4, 4]}, "encoding": {"x": {"field": "severely_burdened_pct", "type": "quantitative"}}}, {"data": {"name": "data-7c288067d94a6f1102d2f340256eca51"}, "mark": {"type": "rule", "color": "gray", "strokeDash": [4, 4]}, "encoding": {"y": {"field": "subsidized_per_100_burdened", "type": "quantitative"}}}], "height": 500, "params": [{"name": "param_1", "select": {"type": "point", "fields": ["income_group"]}, "views": ["view_1"]}], "title": "Cost Burden vs. Coverage by City Type", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-cfaf9ed5e8094a2ebccb58ef5da19fda": [{"income_group": "Legacy City", "total_severe": 205000, "total_subsidized": 648000, "severely_burdened_pct": 7.578558225508318, "subsidized_per_100_burdened": 316.0975609756098, "label_dy": -25.0, "label_dx": 1.5}, {"income_group": "Mixed", "total_severe": 1320000, "total_subsidized": 1114000, "severely_burdened_pct": 48.79852125693161, "subsidized_per_100_burdened": 84.3939393939394, "label_dy": 35.0, "label_dx": 2.0}, {"income_group": "Strong Market", "total_severe": 1180000, "total_subsidized": 978000, "severely_burdened_pct": 43.622920517560075, "subsidized_per_100_burdened": 82.88135593220339, "label_dy": 33.74439461883408, "label_dx": 1.937219730941704}], "data-ccfdef34efef87323cbcfc5758e3a5e2": [{"severely_burdened_pct": 33.333333333333336}], "data-7c288067d94a6f1102d2f340256eca51": [{"subsidized_per_100_burdened": 161.12428543391752}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

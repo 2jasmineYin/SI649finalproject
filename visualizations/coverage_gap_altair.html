@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+        "data": {
+          "values": [
+  {
+    "city": "New York, NY",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 850000
+  },
+  {
+    "city": "New York, NY",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 245000
+  },
+  {
+    "city": "Los Angeles, CA",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 720000
+  },
+  {
+    "city": "Los Angeles, CA",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 297000
+  },
+  {
+    "city": "Chicago, IL",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 380000
+  },
+  {
+    "city": "Chicago, IL",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 395000
+  },
+  {
+    "city": "Detroit, MI",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 120000
+  },
+  {
+    "city": "Detroit, MI",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 224000
+  },
+  {
+    "city": "Cleveland, OH",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 85000
+  },
+  {
+    "city": "Cleveland, OH",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 424000
+  },
+  {
+    "city": "Philadelphia, PA",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 220000
+  },
+  {
+    "city": "Philadelphia, PA",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 422000
+  },
+  {
+    "city": "San Francisco, CA",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 180000
+  },
+  {
+    "city": "San Francisco, CA",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 399000
+  },
+  {
+    "city": "Boston, MA",
+    "type": "Severely Cost-Burdened Renters (Demand)",
+    "count": 150000
+  },
+  {
+    "city": "Boston, MA",
+    "type": "Subsidized Housing Units (Supply)",
+    "count": 334000
+  }
+]
+        },
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "city",
+            "type": "nominal",
+            "title": "City",
+            "axis": {"labelAngle": -45},
+            "sort": ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Detroit, MI", "Cleveland, OH", "Philadelphia, PA", "San Francisco, CA", "Boston, MA"]
+          },
+          "y": {
+            "field": "count",
+            "type": "quantitative",
+            "title": "Count",
+            "stack": "zero"
+          },
+          "color": {
+            "field": "type",
+            "type": "nominal",
+            "title": "Type",
+            "scale": {
+              "domain": ["Severely Cost-Burdened Renters (Demand)", "Subsidized Housing Units (Supply)"],
+              "range": ["#1f77b4", "#aec7e8"]
+            },
+            "legend": {
+              "orient": "top-right"
+            }
+          },
+          "tooltip": [
+            {"field": "city", "type": "nominal", "title": "City"},
+            {"field": "type", "type": "nominal", "title": "Type"},
+            {"field": "count", "type": "quantitative", "format": ",.0f", "title": "Count"}
+          ]
+        },
+        "width": 800,
+        "height": 400,
+        "title": "Affordable Housing Coverage Gap: Demand vs Supply",
+        "config": {
+          "view": {"stroke": null},
+          "axis": {"labelFontSize": 11, "titleFontSize": 12}
+        }
+      };
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+  </script>
+</body>
+</html>

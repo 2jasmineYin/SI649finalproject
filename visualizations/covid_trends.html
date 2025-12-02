@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "circle", "color": "#e74c3c", "opacity": 0.7, "size": 120}, "encoding": {"opacity": {"condition": {"param": "param_2", "value": 1}, "value": 0.4}, "tooltip": [{"field": "year", "title": "Year", "type": "ordinal"}, {"field": "hpi_index", "format": ".1f", "title": "FHFA HPI", "type": "quantitative"}], "x": {"field": "year", "title": "Year", "type": "ordinal"}, "y": {"field": "hpi_index", "title": "FHFA House Price Index", "type": "quantitative"}}, "name": "view_2", "transform": [{"filter": {"param": "param_3"}}]}, {"mark": {"type": "circle", "color": "#3498db", "opacity": 0.7, "size": 120}, "encoding": {"opacity": {"condition": {"param": "param_2", "value": 1}, "value": 0.4}, "tooltip": [{"field": "year", "title": "Year", "type": "ordinal"}, {"field": "zhvi", "format": "$,.0f", "title": "ZHVI (Home Value)", "type": "quantitative"}], "x": {"field": "year", "title": "Year", "type": "ordinal"}, "y": {"axis": {"format": "$,.0f"}, "field": "zhvi", "title": "Typical Home Value ($)", "type": "quantitative"}}, "transform": [{"filter": {"param": "param_3"}}]}, {"mark": {"type": "rule", "color": "gray"}, "encoding": {"x": {"field": "year", "type": "ordinal"}}, "name": "view_3", "transform": [{"filter": {"param": "param_3"}}]}], "data": {"name": "data-2e729523ec30820383fb5799406cc496"}, "height": 420, "params": [{"name": "param_3", "select": {"type": "interval", "encodings": ["x"]}, "views": ["view_2"]}, {"name": "param_2", "select": {"type": "point", "fields": ["year"], "nearest": true, "on": "mouseover"}, "views": ["view_3"]}], "resolve": {"scale": {"y": "independent"}}, "title": "COVID-19 Housing Cost Surge", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-2e729523ec30820383fb5799406cc496": [{"year": 2010, "hpi_index": 185.66666666666666, "zhvi": 170720.54509054017}, {"year": 2011, "hpi_index": 177.775, "zhvi": 161805.37131320598}, {"year": 2012, "hpi_index": 182.60916666666665, "zhvi": 160439.46449865928}, {"year": 2013, "hpi_index": 195.25666666666666, "zhvi": 170678.3275310273}, {"year": 2014, "hpi_index": 204.765, "zhvi": 182204.1916096801}, {"year": 2015, "hpi_index": 215.29999999999998, "zhvi": 191904.04740461675}, {"year": 2016, "hpi_index": 227.4275, "zhvi": 203624.3951942952}, {"year": 2017, "hpi_index": 241.37750000000003, "zhvi": 215828.83354807508}, {"year": 2018, "hpi_index": 256.1425, "zhvi": 229543.27168777524}, {"year": 2019, "hpi_index": 269.11833333333334, "zhvi": 241040.56398587278}, {"year": 2020, "hpi_index": 290.2, "zhvi": 256038.51802832948}, {"year": 2021, "hpi_index": 338.2725, "zhvi": 294678.860873124}, {"year": 2022, "hpi_index": 383.52416666666664, "zhvi": 338543.5060897612}, {"year": 2023, "hpi_index": 401.7341666666666, "zhvi": 346654.35641207435}, {"year": 2024, "hpi_index": 423.8541666666667, "zhvi": 358195.2518823286}, {"year": 2025, "hpi_index": 434.85, "zhvi": 361307.64581981563}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

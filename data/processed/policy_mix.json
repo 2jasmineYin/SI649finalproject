@@ -1,0 +1,74 @@
+[
+  {
+    "city": "New York, NY",
+    "city_type": "Strong Market",
+    "public_housing_pct": 15.0,
+    "voucher_pct": 25.0,
+    "lihtc_pct": 45.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  },
+  {
+    "city": "Los Angeles, CA",
+    "city_type": "Mixed",
+    "public_housing_pct": 25.0,
+    "voucher_pct": 30.0,
+    "lihtc_pct": 30.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  },
+  {
+    "city": "Chicago, IL",
+    "city_type": "Mixed",
+    "public_housing_pct": 25.0,
+    "voucher_pct": 30.0,
+    "lihtc_pct": 30.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  },
+  {
+    "city": "Detroit, MI",
+    "city_type": "Legacy City",
+    "public_housing_pct": 40.0,
+    "voucher_pct": 35.0,
+    "lihtc_pct": 15.0,
+    "section8_pct": 8.0,
+    "iz_pct": 2.0
+  },
+  {
+    "city": "Cleveland, OH",
+    "city_type": "Legacy City",
+    "public_housing_pct": 40.0,
+    "voucher_pct": 35.0,
+    "lihtc_pct": 15.0,
+    "section8_pct": 8.0,
+    "iz_pct": 2.0
+  },
+  {
+    "city": "Philadelphia, PA",
+    "city_type": "Mixed",
+    "public_housing_pct": 25.0,
+    "voucher_pct": 30.0,
+    "lihtc_pct": 30.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  },
+  {
+    "city": "San Francisco, CA",
+    "city_type": "Strong Market",
+    "public_housing_pct": 15.0,
+    "voucher_pct": 25.0,
+    "lihtc_pct": 45.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  },
+  {
+    "city": "Boston, MA",
+    "city_type": "Strong Market",
+    "public_housing_pct": 15.0,
+    "voucher_pct": 25.0,
+    "lihtc_pct": 45.0,
+    "section8_pct": 10.0,
+    "iz_pct": 5.0
+  }
+]

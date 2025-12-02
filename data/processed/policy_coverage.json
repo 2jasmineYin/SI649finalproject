@@ -1,0 +1,90 @@
+[
+  {
+    "city": "New York, NY",
+    "severe_cost_burden_renters": 850000.0,
+    "public_housing_units": 48000.0,
+    "voucher_households": 56000.0,
+    "lihtc_units": 100000.0,
+    "section8_units": 41000.0,
+    "total_subsidized": 245000.0,
+    "coverage_ratio": 28.82,
+    "subsidized_per_100_burdened": 28.82
+  },
+  {
+    "city": "Los Angeles, CA",
+    "severe_cost_burden_renters": 720000.0,
+    "public_housing_units": 77000.0,
+    "voucher_households": 85000.0,
+    "lihtc_units": 56000.0,
+    "section8_units": 79000.0,
+    "total_subsidized": 297000.0,
+    "coverage_ratio": 41.25,
+    "subsidized_per_100_burdened": 41.25
+  },
+  {
+    "city": "Chicago, IL",
+    "severe_cost_burden_renters": 380000.0,
+    "public_housing_units": 42000.0,
+    "voucher_households": 201000.0,
+    "lihtc_units": 138000.0,
+    "section8_units": 14000.0,
+    "total_subsidized": 395000.0,
+    "coverage_ratio": 103.95,
+    "subsidized_per_100_burdened": 103.95
+  },
+  {
+    "city": "Detroit, MI",
+    "severe_cost_burden_renters": 120000.0,
+    "public_housing_units": 27000.0,
+    "voucher_households": 73000.0,
+    "lihtc_units": 85000.0,
+    "section8_units": 39000.0,
+    "total_subsidized": 224000.0,
+    "coverage_ratio": 186.67,
+    "subsidized_per_100_burdened": 186.67
+  },
+  {
+    "city": "Cleveland, OH",
+    "severe_cost_burden_renters": 85000.0,
+    "public_housing_units": 149000.0,
+    "voucher_households": 204000.0,
+    "lihtc_units": 36000.0,
+    "section8_units": 35000.0,
+    "total_subsidized": 424000.0,
+    "coverage_ratio": 498.82,
+    "subsidized_per_100_burdened": 498.82
+  },
+  {
+    "city": "Philadelphia, PA",
+    "severe_cost_burden_renters": 220000.0,
+    "public_housing_units": 127000.0,
+    "voucher_households": 106000.0,
+    "lihtc_units": 144000.0,
+    "section8_units": 45000.0,
+    "total_subsidized": 422000.0,
+    "coverage_ratio": 191.82,
+    "subsidized_per_100_burdened": 191.82
+  },
+  {
+    "city": "San Francisco, CA",
+    "severe_cost_burden_renters": 180000.0,
+    "public_housing_units": 21000.0,
+    "voucher_households": 244000.0,
+    "lihtc_units": 70000.0,
+    "section8_units": 64000.0,
+    "total_subsidized": 399000.0,
+    "coverage_ratio": 221.67,
+    "subsidized_per_100_burdened": 221.67
+  },
+  {
+    "city": "Boston, MA",
+    "severe_cost_burden_renters": 150000.0,
+    "public_housing_units": 107000.0,
+    "voucher_households": 121000.0,
+    "lihtc_units": 69000.0,
+    "section8_units": 37000.0,
+    "total_subsidized": 334000.0,
+    "coverage_ratio": 222.67,
+    "subsidized_per_100_burdened": 222.67
+  }
+]

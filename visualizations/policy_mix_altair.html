@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}, "axis": {"labelFontSize": 11, "titleFontSize": 12}}, "data": {"name": "data-007807aa23cf82349a0b6e56d74207be"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "policy_label", "scale": {"scheme": "category10"}, "title": "Policy Tool", "type": "nominal"}, "order": {"field": "policy_tool", "sort": "ascending", "type": "ordinal"}, "tooltip": [{"field": "city", "type": "nominal"}, {"field": "city_type", "type": "nominal"}, {"field": "policy_label", "type": "nominal"}, {"field": "percentage", "format": ".1f", "title": "Percentage (%)", "type": "quantitative"}], "x": {"axis": {"labelAngle": -45}, "field": "city", "sort": "-y", "title": "City", "type": "nominal"}, "y": {"field": "percentage", "stack": "normalize", "title": "Percentage (%)", "type": "quantitative"}}, "height": 400, "title": "Affordable Housing Policy Tool Mix by City", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-007807aa23cf82349a0b6e56d74207be": [{"city": "New York, NY", "city_type": "Strong Market", "policy_tool": "public_housing_pct", "percentage": 15, "policy_label": "Public Housing"}, {"city": "Los Angeles, CA", "city_type": "Mixed", "policy_tool": "public_housing_pct", "percentage": 25, "policy_label": "Public Housing"}, {"city": "Chicago, IL", "city_type": "Mixed", "policy_tool": "public_housing_pct", "percentage": 25, "policy_label": "Public Housing"}, {"city": "Detroit, MI", "city_type": "Legacy City", "policy_tool": "public_housing_pct", "percentage": 40, "policy_label": "Public Housing"}, {"city": "Cleveland, OH", "city_type": "Legacy City", "policy_tool": "public_housing_pct", "percentage": 40, "policy_label": "Public Housing"}, {"city": "Philadelphia, PA", "city_type": "Mixed", "policy_tool": "public_housing_pct", "percentage": 25, "policy_label": "Public Housing"}, {"city": "San Francisco, CA", "city_type": "Strong Market", "policy_tool": "public_housing_pct", "percentage": 15, "policy_label": "Public Housing"}, {"city": "Boston, MA", "city_type": "Strong Market", "policy_tool": "public_housing_pct", "percentage": 15, "policy_label": "Public Housing"}, {"city": "New York, NY", "city_type": "Strong Market", "policy_tool": "voucher_pct", "percentage": 25, "policy_label": "Housing Vouchers"}, {"city": "Los Angeles, CA", "city_type": "Mixed", "policy_tool": "voucher_pct", "percentage": 30, "policy_label": "Housing Vouchers"}, {"city": "Chicago, IL", "city_type": "Mixed", "policy_tool": "voucher_pct", "percentage": 30, "policy_label": "Housing Vouchers"}, {"city": "Detroit, MI", "city_type": "Legacy City", "policy_tool": "voucher_pct", "percentage": 35, "policy_label": "Housing Vouchers"}, {"city": "Cleveland, OH", "city_type": "Legacy City", "policy_tool": "voucher_pct", "percentage": 35, "policy_label": "Housing Vouchers"}, {"city": "Philadelphia, PA", "city_type": "Mixed", "policy_tool": "voucher_pct", "percentage": 30, "policy_label": "Housing Vouchers"}, {"city": "San Francisco, CA", "city_type": "Strong Market", "policy_tool": "voucher_pct", "percentage": 25, "policy_label": "Housing Vouchers"}, {"city": "Boston, MA", "city_type": "Strong Market", "policy_tool": "voucher_pct", "percentage": 25, "policy_label": "Housing Vouchers"}, {"city": "New York, NY", "city_type": "Strong Market", "policy_tool": "lihtc_pct", "percentage": 45, "policy_label": "LIHTC"}, {"city": "Los Angeles, CA", "city_type": "Mixed", "policy_tool": "lihtc_pct", "percentage": 30, "policy_label": "LIHTC"}, {"city": "Chicago, IL", "city_type": "Mixed", "policy_tool": "lihtc_pct", "percentage": 30, "policy_label": "LIHTC"}, {"city": "Detroit, MI", "city_type": "Legacy City", "policy_tool": "lihtc_pct", "percentage": 15, "policy_label": "LIHTC"}, {"city": "Cleveland, OH", "city_type": "Legacy City", "policy_tool": "lihtc_pct", "percentage": 15, "policy_label": "LIHTC"}, {"city": "Philadelphia, PA", "city_type": "Mixed", "policy_tool": "lihtc_pct", "percentage": 30, "policy_label": "LIHTC"}, {"city": "San Francisco, CA", "city_type": "Strong Market", "policy_tool": "lihtc_pct", "percentage": 45, "policy_label": "LIHTC"}, {"city": "Boston, MA", "city_type": "Strong Market", "policy_tool": "lihtc_pct", "percentage": 45, "policy_label": "LIHTC"}, {"city": "New York, NY", "city_type": "Strong Market", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "Los Angeles, CA", "city_type": "Mixed", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "Chicago, IL", "city_type": "Mixed", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "Detroit, MI", "city_type": "Legacy City", "policy_tool": "section8_pct", "percentage": 8, "policy_label": "Section 8 Project-Based"}, {"city": "Cleveland, OH", "city_type": "Legacy City", "policy_tool": "section8_pct", "percentage": 8, "policy_label": "Section 8 Project-Based"}, {"city": "Philadelphia, PA", "city_type": "Mixed", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "San Francisco, CA", "city_type": "Strong Market", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "Boston, MA", "city_type": "Strong Market", "policy_tool": "section8_pct", "percentage": 10, "policy_label": "Section 8 Project-Based"}, {"city": "New York, NY", "city_type": "Strong Market", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Los Angeles, CA", "city_type": "Mixed", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Chicago, IL", "city_type": "Mixed", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Detroit, MI", "city_type": "Legacy City", "policy_tool": "iz_pct", "percentage": 2, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Cleveland, OH", "city_type": "Legacy City", "policy_tool": "iz_pct", "percentage": 2, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Philadelphia, PA", "city_type": "Mixed", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "San Francisco, CA", "city_type": "Strong Market", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}, {"city": "Boston, MA", "city_type": "Strong Market", "policy_tool": "iz_pct", "percentage": 5, "policy_label": "Inclusionary Zoning (IZ)"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

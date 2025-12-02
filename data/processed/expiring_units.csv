@@ -1,0 +1,169 @@
+city,year,expiring_units,policy_type
+"New York, NY",2025,1878,Section 8
+"New York, NY",2026,2056,Section 8
+"New York, NY",2027,1908,LIHTC
+"New York, NY",2028,677,LIHTC
+"New York, NY",2029,2696,Section 8
+"New York, NY",2030,4777,LIHTC
+"New York, NY",2031,3261,Section 8
+"New York, NY",2032,3574,LIHTC
+"New York, NY",2033,4529,LIHTC
+"New York, NY",2034,1787,LIHTC
+"New York, NY",2035,2375,LIHTC
+"New York, NY",2036,4370,LIHTC
+"New York, NY",2037,3907,LIHTC
+"New York, NY",2038,5113,Section 8
+"New York, NY",2039,7207,LIHTC
+"New York, NY",2040,3332,LIHTC
+"New York, NY",2041,3716,LIHTC
+"New York, NY",2042,7749,LIHTC
+"New York, NY",2043,7308,Section 8
+"New York, NY",2044,7201,Section 8
+"New York, NY",2045,7973,Section 8
+"Los Angeles, CA",2025,2393,LIHTC
+"Los Angeles, CA",2026,2781,Section 8
+"Los Angeles, CA",2027,1828,LIHTC
+"Los Angeles, CA",2028,729,Section 8
+"Los Angeles, CA",2029,631,LIHTC
+"Los Angeles, CA",2030,2643,Section 8
+"Los Angeles, CA",2031,1864,LIHTC
+"Los Angeles, CA",2032,3323,LIHTC
+"Los Angeles, CA",2033,2288,Section 8
+"Los Angeles, CA",2034,3044,LIHTC
+"Los Angeles, CA",2035,7266,LIHTC
+"Los Angeles, CA",2036,4169,Section 8
+"Los Angeles, CA",2037,6598,LIHTC
+"Los Angeles, CA",2038,6788,LIHTC
+"Los Angeles, CA",2039,6780,LIHTC
+"Los Angeles, CA",2040,3796,LIHTC
+"Los Angeles, CA",2041,3133,LIHTC
+"Los Angeles, CA",2042,2744,LIHTC
+"Los Angeles, CA",2043,2898,Section 8
+"Los Angeles, CA",2044,3310,LIHTC
+"Los Angeles, CA",2045,5458,LIHTC
+"Chicago, IL",2025,2076,LIHTC
+"Chicago, IL",2026,2417,LIHTC
+"Chicago, IL",2027,2766,LIHTC
+"Chicago, IL",2028,547,LIHTC
+"Chicago, IL",2029,969,LIHTC
+"Chicago, IL",2030,3199,LIHTC
+"Chicago, IL",2031,4148,LIHTC
+"Chicago, IL",2032,1456,Section 8
+"Chicago, IL",2033,1647,LIHTC
+"Chicago, IL",2034,4906,LIHTC
+"Chicago, IL",2035,7895,Section 8
+"Chicago, IL",2036,6100,LIHTC
+"Chicago, IL",2037,6158,LIHTC
+"Chicago, IL",2038,7122,Section 8
+"Chicago, IL",2039,7234,LIHTC
+"Chicago, IL",2040,3629,Section 8
+"Chicago, IL",2041,3323,LIHTC
+"Chicago, IL",2042,6344,LIHTC
+"Chicago, IL",2043,6906,LIHTC
+"Chicago, IL",2044,2159,Section 8
+"Chicago, IL",2045,4973,LIHTC
+"Detroit, MI",2025,1759,Section 8
+"Detroit, MI",2026,1486,LIHTC
+"Detroit, MI",2027,822,Section 8
+"Detroit, MI",2028,2490,LIHTC
+"Detroit, MI",2029,2681,LIHTC
+"Detroit, MI",2030,1525,LIHTC
+"Detroit, MI",2031,4878,LIHTC
+"Detroit, MI",2032,2085,LIHTC
+"Detroit, MI",2033,3484,LIHTC
+"Detroit, MI",2034,1867,LIHTC
+"Detroit, MI",2035,7979,LIHTC
+"Detroit, MI",2036,7840,LIHTC
+"Detroit, MI",2037,7502,LIHTC
+"Detroit, MI",2038,5588,LIHTC
+"Detroit, MI",2039,5698,Section 8
+"Detroit, MI",2040,3840,Section 8
+"Detroit, MI",2041,2172,LIHTC
+"Detroit, MI",2042,3885,LIHTC
+"Detroit, MI",2043,2058,Section 8
+"Detroit, MI",2044,7169,Section 8
+"Detroit, MI",2045,2552,LIHTC
+"Cleveland, OH",2025,1853,Section 8
+"Cleveland, OH",2026,1474,Section 8
+"Cleveland, OH",2027,2488,Section 8
+"Cleveland, OH",2028,1041,LIHTC
+"Cleveland, OH",2029,2838,LIHTC
+"Cleveland, OH",2030,1995,LIHTC
+"Cleveland, OH",2031,4307,LIHTC
+"Cleveland, OH",2032,1386,Section 8
+"Cleveland, OH",2033,2765,LIHTC
+"Cleveland, OH",2034,2683,LIHTC
+"Cleveland, OH",2035,7972,Section 8
+"Cleveland, OH",2036,7353,LIHTC
+"Cleveland, OH",2037,2806,Section 8
+"Cleveland, OH",2038,7965,LIHTC
+"Cleveland, OH",2039,2895,Section 8
+"Cleveland, OH",2040,3558,LIHTC
+"Cleveland, OH",2041,3148,LIHTC
+"Cleveland, OH",2042,4281,LIHTC
+"Cleveland, OH",2043,2617,LIHTC
+"Cleveland, OH",2044,6508,Section 8
+"Cleveland, OH",2045,7342,LIHTC
+"Philadelphia, PA",2025,560,LIHTC
+"Philadelphia, PA",2026,1468,Section 8
+"Philadelphia, PA",2027,2489,LIHTC
+"Philadelphia, PA",2028,2142,LIHTC
+"Philadelphia, PA",2029,1174,LIHTC
+"Philadelphia, PA",2030,2599,Section 8
+"Philadelphia, PA",2031,4211,LIHTC
+"Philadelphia, PA",2032,2168,LIHTC
+"Philadelphia, PA",2033,4921,LIHTC
+"Philadelphia, PA",2034,4208,LIHTC
+"Philadelphia, PA",2035,7885,LIHTC
+"Philadelphia, PA",2036,3555,Section 8
+"Philadelphia, PA",2037,2479,LIHTC
+"Philadelphia, PA",2038,6441,Section 8
+"Philadelphia, PA",2039,4569,Section 8
+"Philadelphia, PA",2040,6785,LIHTC
+"Philadelphia, PA",2041,6350,Section 8
+"Philadelphia, PA",2042,6160,Section 8
+"Philadelphia, PA",2043,3522,Section 8
+"Philadelphia, PA",2044,2556,LIHTC
+"Philadelphia, PA",2045,3926,LIHTC
+"San Francisco, CA",2025,2833,Section 8
+"San Francisco, CA",2026,2935,Section 8
+"San Francisco, CA",2027,835,LIHTC
+"San Francisco, CA",2028,2890,LIHTC
+"San Francisco, CA",2029,1795,LIHTC
+"San Francisco, CA",2030,1836,LIHTC
+"San Francisco, CA",2031,2286,Section 8
+"San Francisco, CA",2032,2621,Section 8
+"San Francisco, CA",2033,3643,Section 8
+"San Francisco, CA",2034,2295,LIHTC
+"San Francisco, CA",2035,2594,Section 8
+"San Francisco, CA",2036,7088,LIHTC
+"San Francisco, CA",2037,2819,Section 8
+"San Francisco, CA",2038,3746,LIHTC
+"San Francisco, CA",2039,3085,LIHTC
+"San Francisco, CA",2040,2563,LIHTC
+"San Francisco, CA",2041,5027,Section 8
+"San Francisco, CA",2042,5589,LIHTC
+"San Francisco, CA",2043,7763,LIHTC
+"San Francisco, CA",2044,7357,LIHTC
+"San Francisco, CA",2045,7471,LIHTC
+"Boston, MA",2025,1726,LIHTC
+"Boston, MA",2026,924,LIHTC
+"Boston, MA",2027,1050,Section 8
+"Boston, MA",2028,938,LIHTC
+"Boston, MA",2029,1136,Section 8
+"Boston, MA",2030,3477,Section 8
+"Boston, MA",2031,2404,Section 8
+"Boston, MA",2032,3597,LIHTC
+"Boston, MA",2033,3070,LIHTC
+"Boston, MA",2034,4708,LIHTC
+"Boston, MA",2035,2416,Section 8
+"Boston, MA",2036,5469,LIHTC
+"Boston, MA",2037,2361,Section 8
+"Boston, MA",2038,3071,LIHTC
+"Boston, MA",2039,4145,Section 8
+"Boston, MA",2040,5619,LIHTC
+"Boston, MA",2041,5503,LIHTC
+"Boston, MA",2042,2916,Section 8
+"Boston, MA",2043,7660,LIHTC
+"Boston, MA",2044,6469,Section 8
+"Boston, MA",2045,5024,LIHTC
